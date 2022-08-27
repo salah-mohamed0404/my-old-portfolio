@@ -14,7 +14,7 @@ function AboutSection() {
               university, and self learning web developer who is passionate
               about programming in gerneral and web development in particular.
             </p>
-            <a href="#edu&exp" className="link">
+            <a href="#skills" className="link">
               Cetificates
             </a>
           </div>

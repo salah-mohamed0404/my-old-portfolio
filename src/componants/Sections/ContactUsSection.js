@@ -2,7 +2,7 @@ import classes from "./ContactUsSection.module.css";
 
 function ContactUsSection() {
   return (
-    <section className={classes["contact-section"]}>
+    <section id="services" className={classes["contact-section"]}>
       <h2>Get in touch</h2>
       <ul className={classes["contact-links"]}>
         <li className={classes["contact-link"]}>

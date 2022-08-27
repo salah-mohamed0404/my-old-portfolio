@@ -11,7 +11,7 @@ function Projects() {
   );
 
   return (
-    <section className={classes["projects-section"]}>
+    <section id="projects" className={classes["projects-section"]}>
       <h2>Projects</h2>
       <nav className={classes["projects-nav"]}>
         <button

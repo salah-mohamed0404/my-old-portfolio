@@ -36,13 +36,14 @@
   height: 0.5rem;
   background-color: #e9ecef;
 
-  transform: scaleX(0);
-  transform-origin: left;
+  transform: scaleX(1);
+  transform-origin: right;
   transition: transform 0.3s ease-in-out;
 }
 
 .main a:hover::after {
-  transform: scaleX(1);
+  transform: scaleX(0);
+  transform-origin: left;
 }
 
 .main img {

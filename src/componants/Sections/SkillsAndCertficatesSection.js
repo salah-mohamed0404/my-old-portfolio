@@ -4,7 +4,7 @@ import Skills from "./SkillsAndCertficates/Skills";
 
 function SkillsAndCertficates() {
   return (
-    <section className={classes["skillAndCertficates-sectoin"]}>
+    <section id="skills" className={classes["skillAndCertficates-sectoin"]}>
       <h2>Skills & Certificates</h2>
       <Skills />
       <Certificates />

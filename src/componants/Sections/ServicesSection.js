@@ -3,7 +3,7 @@ import serviceImg from "../../assets/MERN services.png";
 
 function Services() {
   return (
-    <section className={classes["services-section"]}>
+    <section id="services" className={classes["services-section"]}>
       <div className="container">
         <h2 className="heading-secondary">Services</h2>
         <div className={classes.main}>

@@ -29,7 +29,7 @@ function MainNav() {
         </li>
 
         <li>
-          <a className="link btn" href="#content">
+          <a className="link btn" href="#contact">
             Contact
           </a>
         </li>

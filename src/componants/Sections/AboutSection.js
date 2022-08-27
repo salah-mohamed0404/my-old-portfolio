@@ -10,7 +10,6 @@ function AboutSection() {
           <div className={classes["about-text"]}>
             <h3 className="heading-tertiary">Hello! My name is Salah.</h3>
             <p>
-              <br />
               I'm a College student in computers and AI faculty, Helwan
               university, and self learning web developer who is passionate
               about programming in gerneral and web development in particular.

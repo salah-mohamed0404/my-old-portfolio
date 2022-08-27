@@ -50,6 +50,8 @@
   --main-color: #212529;
   --main-color-darker: #000;
   --main-gray: #868e96;
+  --secodray-gray: #ced4da;
+  --light-gray: #f8f9fa;
   --main-gradient: linear-gradient(to top left, #212529, #868e96);
 }
 

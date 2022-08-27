@@ -1,7 +1,7 @@
 .about-section {
   width: 100%;
   background-color: var(--main-color);
-  color: #fff;
+  color: var(--light-gray);
   padding: 9.6rem 0;
 }
 
@@ -9,6 +9,8 @@
   display: flex;
   align-items: center;
   gap: 16.5rem;
+
+  color: var(--secodray-gray);
 }
 
 .main h3 {
@@ -32,7 +34,7 @@
   bottom: -0.8rem;
   width: 100%;
   height: 0.5rem;
-  background-color: #fff;
+  background-color: #e9ecef;
 
   transform: scaleX(0);
   transform-origin: left;

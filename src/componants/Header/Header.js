@@ -1,14 +1,21 @@
 import MainNav from "./MainNav";
+import HeroSection from "./HeroSection";
+
 import classes from "./Header.module.css";
+import logoImg from "../../assets/logo4.png";
 
 function Header() {
   return (
-    <header>
-      <div className={classes.logo}>
-        <img src="" alt="" />
-      </div>
+    <header className={classes["main-header"]}>
+      <header>
+        <div className={classes.logo}>
+          <img src={logoImg} alt="logo" />
+        </div>
 
-      <MainNav />
+        <MainNav />
+      </header>
+
+      <HeroSection />
     </header>
   );
 }

@@ -1,4 +1,3 @@
-import HeroSection from "./Sections/HeroSection";
 import classes from "./Main.module.css";
 import AboutSection from "./Sections/AboutSection";
 import ServicesSection from "./Sections/ServicesSection";
@@ -9,7 +8,6 @@ import ContactUsSection from "./Sections/ContactUsSection";
 function Main() {
   return (
     <main className={classes.main}>
-      <HeroSection />
       <AboutSection />
       <ServicesSection />
       <SkillsAndCertficates />

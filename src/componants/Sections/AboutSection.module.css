@@ -1,0 +1,66 @@
+.about-section {
+  width: 100%;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 9.6rem 0;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  gap: 16.5rem;
+}
+
+.main h3 {
+  font-size: 3.2rem;
+}
+
+.main p {
+  font-size: 2.8rem;
+  line-height: 1.4;
+  margin-bottom: 6.4rem;
+}
+
+.main a {
+  position: relative;
+}
+
+.main a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.8rem;
+  width: 100%;
+  height: 0.5rem;
+  background-color: #fff;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.main a:hover::after {
+  transform: scaleX(1);
+}
+
+.main img {
+  max-width: 100%;
+  position: relative;
+}
+
+.main figure {
+  width: 120%;
+  position: relative;
+}
+
+.main figure::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #fff;
+
+  transform: scale(1.1) translate(-1%, -1%);
+}

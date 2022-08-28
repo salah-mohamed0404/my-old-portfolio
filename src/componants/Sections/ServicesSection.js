@@ -1,5 +1,5 @@
 import classes from "./ServicesSection.module.css";
-import serviceImg from "../../assets/MERN services.png";
+import serviceImg from "../../assets/mern.png";
 
 function Services() {
   return (

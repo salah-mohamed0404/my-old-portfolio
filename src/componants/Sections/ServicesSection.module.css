@@ -19,6 +19,36 @@
   margin-bottom: 6.4rem;
 }
 
+.main figure {
+  width: 150%;
+  position: relative;
+  z-index: 1;
+}
+
 .main img {
-  max-width: 40%;
+  max-width: 100%;
+}
+
+.main figure::before,
+.main figure::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main figure::before {
+  width: 95%;
+  padding-bottom: 95%;
+  background-color: var(--light-gray);
+  z-index: -2;
+}
+
+.main figure::after {
+  width: 55%;
+  padding-bottom: 55%;
+  background-color: var(--theme-color);
+  z-index: -1;
 }

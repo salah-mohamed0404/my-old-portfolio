@@ -23,7 +23,9 @@ function Services() {
             </a>
           </div>
 
-          <img src={serviceImg} alt="MERN technologies logo" />
+          <figure>
+            <img src={serviceImg} alt="MERN technologies logo" />
+          </figure>
         </div>
       </div>
     </section>

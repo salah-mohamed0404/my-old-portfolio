@@ -1,34 +1,44 @@
 export const courses = [
   {
     name: "Programming foundation",
+    description:
+      "A series of 10 courses that taut me alot of the things such as programming fundamentals, object oriented design, data structure, Algorithms, design patterns and much more",
     campany: "Linkedin",
     certificateURL:
-      "https://www.linkedin.com/in/salah-mohamed-1649b0234/details/certifications/",
+      "https://fcihelwanedu-my.sharepoint.com/:f:/g/personal/salah_20210477_fci_helwan_edu_eg/Evf0zIBNT95OtH6Y-J1KfOoBjqF6OBKYorbjqI_RiJ_KIg?e=VmsbrR",
     mentor: "",
   },
   {
     name: "Build Responsive Real-World Websites with HTML and CSS",
+    description:
+      "In 40 hour course, I learned alot of things about HTML and CSS starting with basics into more advanced topics and practice by build awesome websites",
     campany: "Udemy",
     certificateURL:
-      "https://fcihelwanedu-my.sharepoint.com/:i:/g/personal/salah_20210477_fci_helwan_edu_eg/ERvQghO5UgJAqVtP02fgIXYB_a1ezxEzU5IwYCZBkOT0zA?e=3wbM4S",
+      "https://fcihelwanedu-my.sharepoint.com/:b:/g/personal/salah_20210477_fci_helwan_edu_eg/EfPnnGyAIjBCtfLKM1EC79YB-_UytZ8BZQ0Ja3J_yH7Phg?e=rn0qLR",
     mentor: "Jonas Schmedtmann",
   },
   {
     name: "The Complete JavaScript Course 2022: From Zero to Expert!",
+    description:
+      "In the 70 hour course, I learned the fundametals of JavaScript then i learned OOP and data structure of JavaScript and learned how to deal with APIs and asynchronus JavaScript. i parcticed what i leared by building more complex website with alot of functionalities",
     campany: "Udemy",
     certificateURL:
-      "https://fcihelwanedu-my.sharepoint.com/:b:/g/personal/salah_20210477_fci_helwan_edu_eg/Ed5PDJ0Vyb9GsIr_5H0fluUBSyYM1NBXTEPm7qlAjtleHA?e=COr97h",
+      "https://fcihelwanedu-my.sharepoint.com/:b:/g/personal/salah_20210477_fci_helwan_edu_eg/Ed5PDJ0Vyb9GsIr_5H0fluUBSyYM1NBXTEPm7qlAjtleHA?e=mwvPOI",
     mentor: "Jonas Schmedtmann",
   },
   {
     name: "React - The Complete Guide (incl Hooks, React Router, Redux)",
+    description:
+      "In the 48 hour cours i learned all about ReactJS starting with basics into more advanced topics. ilearned the JSX syntax then i learned how to use react hooks. I dived into alot of variois topics and leared it like React Router, Redux, NextJS, TypeScript and much more. ipractice what i learned by build powerful websites that use the power of react to achieve better UI",
     campany: "Udemy",
     certificateURL:
-      "https://fcihelwanedu-my.sharepoint.com/:b:/g/personal/salah_20210477_fci_helwan_edu_eg/EdwU3F8Mv1pAnWn67H3hDC8Bxo7bFMPUMs0MKZTrqe0lmw?e=dJ0pSQ",
+      "https://fcihelwanedu-my.sharepoint.com/:b:/g/personal/salah_20210477_fci_helwan_edu_eg/EdwU3F8Mv1pAnWn67H3hDC8Bxo7bFMPUMs0MKZTrqe0lmw?e=7dqYNm",
     mentor: "Maximilian Schwarzmuller",
   },
   {
     name: "The Complete Node.js Developer Course (3rd Edition)",
+    description:
+      "In the 35 hour course i learned all about NodeJS starting from the basics and into more advanced topics. I learned how to use APIs, async JavaScript, how to create server web app using express, how to make REST API and make endpoints , And how to use Socket.io for creating socket apps. I practiced what i learned by making 4 apps(chat app - task manger API - weather app - notes)",
     campany: "Udemy",
     certificateURL: "",
     mentor: "Andrew Mead",
@@ -159,7 +169,7 @@ export const projects = [
     featured: false,
   },
   {
-    name: "",
+    name: "Weather app",
     description: "A weather app allows you to get the weather in anywhere",
     technologe: "NodeJS",
     codeURL:

@@ -1,11 +1,12 @@
 import classes from "./Skills.module.css";
+import { skills } from "../../../store/data";
 
 function Skills() {
   const renderSkills = (skill) => (
-    <li className={classes["skill-item"]}>
+    <li key={skill.name}>
       <figure>
-        <div className={classes["img-container"]}>
-          <img src={skill.img} alt={skill.name} />
+        <div>
+          <img src={skill.logo} alt={skill.name} />
         </div>
 
         <figcaption>{skill.name}</figcaption>
@@ -14,7 +15,9 @@ function Skills() {
   );
 
   return (
-    <ul className={classes["skills-list"]}>{/* Render Skills dynamic */}</ul>
+    <ul className={classes["skills-list"]}>
+      {skills.map((skill) => renderSkills(skill))}
+    </ul>
   );
 }
 

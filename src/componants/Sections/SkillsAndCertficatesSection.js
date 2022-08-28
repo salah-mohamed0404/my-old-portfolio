@@ -5,9 +5,13 @@ import Skills from "./SkillsAndCertficates/Skills";
 function SkillsAndCertficates() {
   return (
     <section id="skills" className={classes["skillAndCertficates-sectoin"]}>
-      <h2>Skills & Certificates</h2>
-      <Skills />
-      <Certificates />
+      <div className="container">
+        <h2 className="heading-secondary">Skills & Certificates</h2>
+        <div className={classes.main}>
+          <Skills />
+          <Certificates />
+        </div>
+      </div>
     </section>
   );
 }

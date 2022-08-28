@@ -1,4 +1,5 @@
 import classes from "./Footer.module.css";
+import { myLinkedin, myGithub } from "../../store/data";
 
 function Footer() {
   return (
@@ -6,13 +7,15 @@ function Footer() {
       <div className={classes.container}>
         <ul className={classes["work-links"]}>
           <li className={classes["work-link"]}>
-            <a href="https://www.linkedin.com/in/salah-mohamed-1649b0234/">
-              facebook
+            <a href={myLinkedin} target="blank">
+              linkedin
             </a>
           </li>
 
           <li className={classes["work-link"]}>
-            <a href="https://github.com/salahcst344">github</a>
+            <a href={myGithub} target="blank">
+              github
+            </a>
           </li>
         </ul>
 

@@ -1,4 +1,5 @@
 import classes from "./ContactUsSection.module.css";
+import { myEmail, myPhone } from "../../store/data";
 
 function ContactUsSection() {
   return (
@@ -6,13 +7,11 @@ function ContactUsSection() {
       <h2>Get in touch</h2>
       <ul className={classes["contact-links"]}>
         <li className={classes["contact-link"]}>
-          <a href="mailto:salah.web.engineer@gmail.com">
-            salah.web.engineer@gmail.com
-          </a>
+          <a href={`mailto:${myEmail}`}>{myEmail}</a>
         </li>
 
         <li className={classes["contact-link"]}>
-          <a href="tel:+20 01116387902">+201116387902</a>
+          <a href={`tel:${myPhone}`}>{myPhone}</a>
         </li>
       </ul>
     </section>

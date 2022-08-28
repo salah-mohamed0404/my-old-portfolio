@@ -32,6 +32,7 @@
       #495057
       #868e96
       #ced4da
+      #e9ecef
       #f8f9fa
 
 --- 05 SHADOWS
@@ -51,10 +52,11 @@
 */
 
 :root {
+  --theme-color: #e9ecef;
   --main-color: #212529;
   --main-color-darker: #000;
   --main-gray: #868e96;
-  --main-darker-gray: #495057
+  --main-darker-gray: #495057;
   --secodray-gray: #ced4da;
   --light-gray: #f8f9fa;
   --main-gradient: linear-gradient(to top left, #212529, #868e96);
@@ -78,21 +80,23 @@ body {
   line-height: 1;
   font-weight: 400;
   color: var(--main-color);
+  background-color: var(--theme-color);
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
   width: 1.3rem;
 }
 ::-webkit-scrollbar-track {
-  background: var(--main-gray);
+  background-color: var(--main-color);
   border-radius: 9px;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--main-color);
+  background-color: var(--secodray-gray);
   border-radius: 11px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--main-color-darker);
+  background-color: var(--main-gray);
 }
 
 /* Reusable classes */
@@ -116,9 +120,10 @@ body {
 .btn:visited,
 .btn {
   background-color: var(--main-color);
-  color: #fff;
+  color: var(--theme-color);
   border-radius: 1000px;
   padding: 1.2rem;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .btn:hover {

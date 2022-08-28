@@ -19,7 +19,9 @@ function AboutSection() {
             </a>
           </div>
           <figure>
-            <img src={aboutImg} alt="for me" />
+            <div>
+              <img src={aboutImg} alt="for me" />
+            </div>
           </figure>
         </div>
       </div>

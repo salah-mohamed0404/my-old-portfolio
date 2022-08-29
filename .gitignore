@@ -5,6 +5,7 @@
 firebase.json
 .firebaserc
 .firebase
+.prettierrc
 
 # testing
 /coverage

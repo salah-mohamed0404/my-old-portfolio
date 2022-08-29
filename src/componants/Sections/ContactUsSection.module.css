@@ -1,0 +1,40 @@
+.contact-section {
+  background-color: var(--main-color);
+  color: var(--theme-color);
+}
+
+.contact-section div {
+  display: flex;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.contact-section h2 {
+  margin: 0;
+}
+
+.contact-section ul {
+  display: flex;
+  gap: 3.6rem;
+}
+
+.contact-section li {
+  list-style: none;
+}
+
+.contact-section a:link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-section svg {
+  width: 3.2rem;
+  height: 3.2rem;
+  fill: var(--theme-color);
+}
+
+.contact-section li:first-child svg {
+  margin-right: 1rem;
+}

@@ -60,39 +60,39 @@ export const courses = [
 export const skills = [
   {
     name: "HTML",
-    logo: require("../assets/HTML.png"),
+    logo: require("../assets/skill logos/HTML.png"),
   },
   {
     name: "CSS",
-    logo: require("../assets/CSS.png"),
+    logo: require("../assets/skill logos/CSS.png"),
   },
   {
     name: "JavaScript",
-    logo: require("../assets/JS.png"),
+    logo: require("../assets/skill logos/JS.png"),
   },
   {
     name: "ReactJS",
-    logo: require("../assets/ReactJS.png"),
+    logo: require("../assets/skill logos/ReactJS.png"),
   },
   {
     name: "Redux",
-    logo: require("../assets/Redux.png"),
+    logo: require("../assets/skill logos/Redux.png"),
   },
   {
     name: "NextJS",
-    logo: require("../assets/NextJS.png"),
+    logo: require("../assets/skill logos/NextJS.png"),
   },
   {
     name: "NodeJS",
-    logo: require("../assets/NodeJS.png"),
+    logo: require("../assets/skill logos/NodeJS.png"),
   },
   {
     name: "Express",
-    logo: require("../assets/express.png"),
+    logo: require("../assets/skill logos/express.png"),
   },
   {
     name: "MongoDB",
-    logo: require("../assets/MongoDB.png"),
+    logo: require("../assets/skill logos/MongoDB.png"),
   },
   // {
   //   name: "",
@@ -104,7 +104,8 @@ export const projects = [
   {
     name: "Omnifood",
     description: "Heathy food landing page.",
-    technologe: "HTML&CSS",
+    technology: "HTML&CSS",
+    img: require("../assets/projects/omnifood.png"),
     codeURL:
       "https://github.com/salahcst344/Kalbonyan-Elmarsos/tree/main/02-Udemy/-01-HTML-CSS-Jonas/Projects/Omnifood",
     liveURL: "https://omnifood-salah10.netlify.app/",
@@ -113,7 +114,8 @@ export const projects = [
   {
     name: "Forkify",
     description: "A recipes website allows you to search over 1,000,000 recipe",
-    technologe: "JavaScript",
+    technology: "JavaScript",
+    img: require("../assets/projects/forkify.png"),
     codeURL:
       "https://github.com/salahcst344/Kalbonyan-Elmarsos/tree/main/02-Udemy/-02-Js-Jonas/Projects/Forkify",
     liveURL: "https://forkify-salah.netlify.app/",
@@ -122,7 +124,8 @@ export const projects = [
   {
     name: "Mapty",
     description: "A simple web application allows you to track your workouts",
-    technologe: "JavaScript",
+    technology: "JavaScript",
+    img: require("../assets/projects/mapty.png"),
     codeURL:
       "https://github.com/salahcst344/Kalbonyan-Elmarsos/tree/main/02-Udemy/-02-Js-Jonas/Projects/Mapty",
     liveURL: "https://mapty-salah.netlify.app/",
@@ -131,7 +134,8 @@ export const projects = [
   {
     name: "Bankist Site",
     description: "A simple web application with modern animation",
-    technologe: "JavaScript",
+    technology: "JavaScript",
+    img: require("../assets/projects/bankist_site.png"),
     codeURL:
       "https://github.com/salahcst344/Kalbonyan-Elmarsos/tree/main/02-Udemy/-02-Js-Jonas/Projects/Bankist-Site",
     liveURL: "https://bankist-salah.netlify.app/",
@@ -141,7 +145,8 @@ export const projects = [
     name: "Bankist app",
     description:
       "A simulation for a bank with some interested functionality fake login 'js' '1111'",
-    technologe: "JavaScript",
+    technology: "JavaScript",
+    img: require("../assets/projects/bankist_app.png"),
     codeURL:
       "https://github.com/salahcst344/Kalbonyan-Elmarsos/tree/main/02-Udemy/-02-Js-Jonas/Projects/Bankist",
     liveURL: "https://bankist-app-salah.netlify.app/",
@@ -150,7 +155,8 @@ export const projects = [
   {
     name: "Pig game",
     description: "A simple game with two players",
-    technologe: "JavaScript",
+    technology: "JavaScript",
+    img: require("../assets/projects/pig_game.png"),
     codeURL:
       "https://github.com/salahcst344/Kalbonyan-Elmarsos/tree/main/02-Udemy/-02-Js-Jonas/Projects/Pig-Game",
     liveURL: "https://pig-game-salah.netlify.app/",
@@ -159,7 +165,8 @@ export const projects = [
   {
     name: "Order food app",
     description: "A food order app",
-    technologe: "ReactJS",
+    technology: "ReactJS",
+    img: require("../assets/projects/order_food_app.png"),
     codeURL:
       "https://github.com/salahcst344/Kalbonyan-Elmarsos/tree/main/02-Udemy/-03-Reactjs-Maximilian/Projects/order-food-app/S17-project",
     liveURL: "https://order-food-app0.web.app/",
@@ -168,7 +175,8 @@ export const projects = [
   {
     name: "ُExpenses app",
     description: "A simple expenses tracker",
-    technologe: "React",
+    technology: "ReactJS",
+    img: require("../assets/projects/expenses_app.png"),
     codeURL:
       "https://github.com/salahcst344/Kalbonyan-Elmarsos/tree/main/02-Udemy/-03-Reactjs-Maximilian/Projects/Expenses-app/S05-project",
     liveURL: "https://expenses-app-salah.netlify.app/",
@@ -177,7 +185,8 @@ export const projects = [
   {
     name: "Weather app",
     description: "A weather app allows you to get the weather in anywhere",
-    technologe: "NodeJS",
+    technology: "NodeJS",
+    img: require("../assets/projects/weather_app.png"),
     codeURL:
       "https://github.com/salahcst344/Kalbonyan-Elmarsos/tree/main/02-Udemy/-04-Nodejs-Andrew/Projects/Weather-App",
     liveURL: "https://salah-weather-app0.herokuapp.com/",
@@ -186,7 +195,7 @@ export const projects = [
   // {
   //   name: "",
   //   description: "",
-  //   technologe: "",
+  //   technology: "",
   //   codeURL: "",
   //   liveURL: "",
   //   featured: false,

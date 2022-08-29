@@ -15,7 +15,7 @@
     defualt: 1
     Small: 1.05
     medium: 1.2
-    Paragraph default: 1.4
+    Paragraph default: 1.5
     Large: 1.8
 
   - Letter spacing 
@@ -25,13 +25,13 @@
 --- 02 COLORS
 
   - primary: #212529
-  - Tints: 
+  - Tints: #ced4da
   - Shades: #000
   - Accents: 
   - Grays:
       #495057
       #868e96
-      #ced4da
+      
       #e9ecef
       #f8f9fa
 
@@ -39,10 +39,12 @@
 
   box-shadow: 0 0 4.8rem rgba(0, 0, 0, 0.075);
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
---- 06 BORDER-RADIUS
 
-  Default: 9px
-  11px
+  For button
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+--- 06 BORDER-RADIUS
+  Default: 3px
 
 --- 07 WHITESPACE 
 
@@ -54,11 +56,11 @@
 :root {
   --theme-color: #e9ecef;
   --main-color: #212529;
-  --main-color-darker: #000;
+  --main-color-shade: #000;
+  --main-color-tint: #ced4da;
   --main-gray: #868e96;
-  --main-darker-gray: #495057;
-  --secodray-gray: #ced4da;
-  --light-gray: #f8f9fa;
+  --main-gray-shade: #495057;
+  --main-gray-tint: #f8f9fa;
   --main-gradient: linear-gradient(to top left, #212529, #868e96);
 }
 
@@ -89,11 +91,10 @@ body {
 }
 ::-webkit-scrollbar-track {
   background-color: var(--main-color);
-  border-radius: 9px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--secodray-gray);
-  border-radius: 11px;
+  background-color: var(--main-color-tint);
+  border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--main-gray);
@@ -109,9 +110,10 @@ body {
 
 .link:link,
 .link:visited {
+  display: inline-block;
   color: inherit;
   text-decoration: none;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   padding: 0.8rem;
 }
@@ -121,15 +123,17 @@ body {
 .btn {
   background-color: var(--main-color);
   color: var(--theme-color);
-  border-radius: 1000px;
   padding: 1.6rem;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
   transition: all 0.3s;
 }
 
 .btn:hover {
   background-color: var(--theme-color);
   color: var(--main-color);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  transform: translateY(-20%);
 }
 
 .heading-primary,
@@ -169,6 +173,6 @@ body {
   letter-spacing: 0.75px;
 }
 
-main section {
-  margin-top: 12.8rem;
+section {
+  padding: 12.8rem 0;
 }

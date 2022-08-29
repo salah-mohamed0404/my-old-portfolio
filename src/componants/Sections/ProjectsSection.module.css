@@ -1,0 +1,67 @@
+.projects-section h2 {
+  text-align: center;
+}
+
+.projects-section nav {
+  display: flex;
+  justify-content: center;
+  gap: 2.8rem;
+}
+
+.projects-section ul {
+  padding: 4.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 4.8rem;
+  column-gap: 3.6rem;
+}
+
+.projects-section li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  overflow: hidden;
+  color: var(--theme-color);
+  box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+}
+
+.projects-section li:hover {
+  transform: translateY(-5%);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.projects-section img {
+  max-width: 100%;
+}
+
+.projects-section li div {
+  padding: 2.4rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-color);
+  gap: 1.6rem;
+  height: 100%;
+}
+
+.projects-section h3 {
+  font-size: 2rem;
+  letter-spacing: -1px;
+}
+
+.projects-section p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+
+.projects-section span {
+  display: block;
+  width: fit-content;
+  background-color: var(--theme-color);
+  color: var(--main-color);
+  padding: 1rem;
+  border-radius: 3px;
+  align-self: flex-end;
+}

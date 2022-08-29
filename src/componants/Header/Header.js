@@ -2,7 +2,7 @@ import MainNav from "./MainNav";
 import HeroSection from "./HeroSection";
 
 import classes from "./Header.module.css";
-import logoImg from "../../assets/logo4.png";
+import logoImg from "../../assets/logo.png";
 
 function Header() {
   return (

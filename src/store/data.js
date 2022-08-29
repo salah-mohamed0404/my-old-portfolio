@@ -2,7 +2,7 @@ export const courses = [
   {
     name: "Programming foundation",
     description:
-      "A series of 10 courses that taut me alot of the things such as programming fundamentals, object oriented design, data structure, Algorithms, design patterns and much more",
+      "A series of 10 courses that taut me a lot of the things such as programming fundamentals, object oriented design, data structure, Algorithms, design patterns and much more",
     campany: "Linkedin",
     certificateURL:
       "https://fcihelwanedu-my.sharepoint.com/:f:/g/personal/salah_20210477_fci_helwan_edu_eg/Evf0zIBNT95OtH6Y-J1KfOoBjqF6OBKYorbjqI_RiJ_KIg?e=VmsbrR",
@@ -43,6 +43,12 @@ export const courses = [
     certificateURL: "",
     mentor: "Andrew Mead",
   },
+  {
+    name: "AWS",
+    campany: "Amazon",
+    certificateURL: "",
+    mentor: "",
+  },
   // {
   //   name: "",
   //   campany: "",
@@ -82,7 +88,7 @@ export const skills = [
   },
   {
     name: "Express",
-    logo: require("../assets/ExpressJS.png"),
+    logo: require("../assets/express.png"),
   },
   {
     name: "MongoDB",

@@ -9,11 +9,15 @@
   align-items: center;
   gap: 16.5rem;
 
-  color: var(--secodray-gray);
+  color: var(--main-color-tint);
 }
 
 .main h3 {
   font-size: 3.2rem;
+}
+
+.main h4 {
+  transform: translateY(-100%);
 }
 
 .main p {
@@ -47,7 +51,7 @@
 
 .main img {
   max-width: 100%;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.45s ease-in-out;
 }
 
 .main figure:hover img {

@@ -23,13 +23,13 @@
   border-radius: 3px;
   overflow: hidden;
   color: var(--theme-color);
-  box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3.6rem rgba(0, 0, 0, 0.2);
   transition: all 0.5s;
 }
 
 .projects-section li:hover {
   transform: translateY(-5%);
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1rem 4.8rem rgba(0, 0, 0, 0.3);
 }
 
 .projects-section img {
@@ -64,4 +64,22 @@
   padding: 1rem;
   border-radius: 3px;
   align-self: flex-end;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: all 500ms ease-in-out;
 }

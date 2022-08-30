@@ -3,7 +3,7 @@ import heroImg from "../../assets/MERN_Stack_Hero.png";
 
 function HeroSection() {
   return (
-    <section className={classes["section-hero"]}>
+    <section id="section-hero" className={classes["section-hero"]}>
       <div className={classes.hero}>
         <div className={classes.welcoming}>
           <h1 className="heading-primary">

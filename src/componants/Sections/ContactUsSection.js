@@ -1,6 +1,8 @@
 import classes from "./ContactUsSection.module.css";
 import { myEmail, myGithub, myLinkedin, myPhone } from "../../store/data";
 
+const curYear = new Date().getFullYear();
+
 function ContactUsSection() {
   return (
     <section id="contact" className={classes["contact-section"]}>
@@ -44,7 +46,9 @@ function ContactUsSection() {
           </li>
         </ul>
 
-        <p>Made with passion by Salah Mohamed @2022 all rights reserved.</p>
+        <p>
+          Made with passion by Salah Mohamed @{curYear} all rights reserved.
+        </p>
       </div>
     </section>
   );

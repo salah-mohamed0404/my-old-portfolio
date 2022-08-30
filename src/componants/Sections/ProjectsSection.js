@@ -14,9 +14,9 @@ function Projects() {
   const btns = document.querySelectorAll(
     `.${classes["projects-section"]} .btn`
   );
-  const listItems = document.querySelectorAll(
-    `.${classes["projects-section"]} li`
-  );
+  // const listItems = document.querySelectorAll(
+  //   `.${classes["projects-section"]} li`
+  // );
 
   useEffect(() => {
     setActive("Featured");
@@ -24,7 +24,7 @@ function Projects() {
 
   useEffect(() => {
     if (active === "Featured") btns[0].classList.add("btn_active");
-  }, [active]);
+  }, [active, btns]);
 
   // Filter project based on active button
   if (active === "Featured")

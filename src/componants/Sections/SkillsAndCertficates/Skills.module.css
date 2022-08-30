@@ -21,7 +21,7 @@
   background-color: var(--main-color-tint);
   padding: 1.2rem;
   border-radius: 3px;
-  box-shadow: 0 0 4.8rem rgba(255, 255, 255, 0.075);
+  box-shadow: 0 0 4.8rem rgba(233, 236, 239, 0.075);
   transition: all 0.3s;
 
   display: flex;
@@ -31,7 +31,7 @@
 
 .skills-list figure div:hover {
   transform: translateZ(6rem);
-  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 1rem rgba(233, 236, 239, 0.3);
 }
 
 .skills-list figure img {

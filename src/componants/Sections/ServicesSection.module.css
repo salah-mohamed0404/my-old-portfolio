@@ -16,6 +16,7 @@
 .main p {
   font-size: 2.8rem;
   line-height: 1.8;
+  letter-spacing: 0.5px;
   margin-bottom: 6.4rem;
 }
 
@@ -41,15 +42,15 @@
 }
 
 .main figure::before {
-  width: 95%;
-  padding-bottom: 90%;
+  width: 105%;
+  padding-bottom: 100%;
   background-color: var(--main-gray-tint);
   z-index: -2;
 }
 
 .main figure::after {
-  width: 55%;
-  padding-bottom: 50%;
+  width: 65%;
+  padding-bottom: 60%;
   background-color: var(--theme-color);
   z-index: -1;
 }

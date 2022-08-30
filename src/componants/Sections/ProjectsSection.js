@@ -1,16 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { projects } from "../../store/data";
 import classes from "./ProjectsSection.module.css";
 
-const btns = document.querySelectorAll(`.${classes["projects-section"]} .btn`);
+let filteredProjects;
+
+const technolgies = [
+  "Featured",
+  ...new Set(projects.map(project => project.technology)),
+];
 
 function Projects() {
-  let filteredProjects;
+  const [active, setActive] = useState("");
+  const btns = document.querySelectorAll(
+    `.${classes["projects-section"]} .btn`
+  );
   const listItems = document.querySelectorAll(
     `.${classes["projects-section"]} li`
   );
-  const [active, setActive] = useState("Featured");
-  const technolgies = [...new Set(projects.map(project => project.technology))];
+
+  useEffect(() => {
+    setActive("Featured");
+  }, []);
+
+  useEffect(() => {
+    if (active === "Featured") btns[0].classList.add("btn_active");
+  }, [active]);
 
   // Filter project based on active button
   if (active === "Featured")
@@ -27,7 +41,7 @@ function Projects() {
   };
 
   const renderProject = project => (
-    <li key={project.name} className="project-item">
+    <li key={project.name}>
       <figure>
         <img src={project.img} alt={project.name} />
       </figure>
@@ -46,9 +60,6 @@ function Projects() {
       <div className="container">
         <h2 className="heading-secondary">Projects</h2>
         <nav>
-          <button className="btn btn_active" onClick={btnFilterHandler}>
-            Featured
-          </button>
           {technolgies.map(tech => (
             <button className="btn" onClick={btnFilterHandler} key={tech}>
               {tech}

@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   gap: 2.8rem;
+  padding: 0 1.8rem;
 }
 
 .projects-section ul {
@@ -135,4 +136,31 @@
   padding: 1rem;
   border-radius: 3px;
   align-self: flex-end;
+}
+
+@media (max-width: 59em) {
+  .projects-section ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 40.625em) {
+  .projects-section ul {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-section li {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 31.6em) {
+  .projects-section nav {
+    gap: 1.2rem;
+    flex-wrap: wrap;
+  }
+  .projects-section li {
+    width: 100%;
+  }
 }

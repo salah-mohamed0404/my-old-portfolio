@@ -43,3 +43,9 @@
   letter-spacing: 0.5px;
   color: var(--secodray-gray);
 }
+
+@media (max-width: 31.6em) {
+  .skills-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

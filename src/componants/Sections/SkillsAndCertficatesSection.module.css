@@ -10,3 +10,9 @@
   gap: 9.6rem;
   color: var(--main-color-tint);
 }
+
+@media (max-width: 59em) {
+  .main {
+    flex-direction: column;
+  }
+}

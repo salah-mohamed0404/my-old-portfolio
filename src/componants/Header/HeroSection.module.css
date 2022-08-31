@@ -7,6 +7,10 @@
   justify-content: space-between;
 }
 
+.welcoming {
+  max-width: 130%;
+}
+
 .hero h2 {
   text-transform: none;
 }
@@ -33,6 +37,42 @@
   z-index: -1;
 }
 
+.me {
+  max-width: 100%;
+}
+
 .section-hero img {
-  width: 50rem;
+  max-width: 100%;
+}
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .hero h2 {
+    font-size: 4rem;
+  }
+  .me {
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 59em) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 3.6rem;
+  }
+  .me {
+    max-width: 70%;
+  }
+  .hero img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 31.5625em) {
+  .section-hero strong {
+    margin-top: 1.6rem;
+  }
 }

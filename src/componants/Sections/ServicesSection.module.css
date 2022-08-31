@@ -54,3 +54,13 @@
   background-color: var(--theme-color);
   z-index: -1;
 }
+
+@media (max-width: 59em) {
+  .main {
+    flex-direction: column;
+  }
+
+  .main figure {
+    max-width: 70%;
+  }
+}

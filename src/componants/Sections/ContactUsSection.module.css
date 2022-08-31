@@ -50,3 +50,19 @@
   padding: 1.6rem;
   margin-top: 9.6rem;
 }
+
+@media (max-width: 59em) {
+  .contact-section ul {
+    grid-template-columns: 1fr;
+  }
+  .contact-section li {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 31.6em) {
+  .contact-section li {
+    width: 90%;
+  }
+}

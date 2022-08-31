@@ -142,3 +142,13 @@
   transform: scaleY(0);
   transform-origin: bottom;
 }
+
+@media (max-width: 59em) {
+  .main {
+    flex-direction: column;
+  }
+
+  .main figure {
+    max-width: 70%;
+  }
+}

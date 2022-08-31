@@ -34,6 +34,19 @@ function Header() {
     obs.observe(sectionHeroEl);
   }
 
+  const navBtnHandler = () =>
+    document.getElementById("nav-header").classList.toggle(classes["nav-open"]);
+
+  document
+    .querySelectorAll("#nav-header a")
+    .forEach(link =>
+      link.addEventListener("click", () =>
+        document
+          .getElementById("nav-header")
+          .classList.remove(classes["nav-open"])
+      )
+    );
+
   return (
     <header className={classes["main-header"]}>
       <header id="nav-header">
@@ -42,6 +55,10 @@ function Header() {
         </div>
 
         <MainNav />
+
+        <button className={classes["btn-mobile-nav"]} onClick={navBtnHandler}>
+          <div></div>
+        </button>
       </header>
 
       <HeroSection />

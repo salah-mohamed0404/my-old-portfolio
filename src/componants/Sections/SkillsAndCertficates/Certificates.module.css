@@ -77,3 +77,15 @@
   opacity: 1;
   transform: translate(10%, -120%);
 }
+
+@media (max-width: 65.625em) {
+  .certificates-list li div:last-child h3:hover p {
+    transform: translate(-20%, -120%);
+  }
+}
+
+@media (max-width: 59em) {
+  .certificates-list li div:last-child h3:hover p {
+    transform: translate(10%, -120%);
+  }
+}

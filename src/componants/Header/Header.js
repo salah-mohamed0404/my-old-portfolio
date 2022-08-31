@@ -10,6 +10,9 @@ function Header() {
   useEffect(() => refresh(true), []);
   // Sticky navigation
   if (first) {
+    const headerHeight = document
+      .getElementById("nav-header")
+      .getBoundingClientRect().height;
     const sectionHeroEl = document.getElementById("section-hero");
 
     const obs = new IntersectionObserver(
@@ -28,7 +31,7 @@ function Header() {
         // In the viewport
         root: null,
         threshold: 0,
-        rootMargin: "-80px",
+        rootMargin: `-${headerHeight}px`,
       }
     );
     obs.observe(sectionHeroEl);

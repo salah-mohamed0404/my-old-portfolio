@@ -32,8 +32,65 @@
   box-shadow: 0 1rem 4.8rem rgba(0, 0, 0, 0.3);
 }
 
+.projects-section figure {
+  position: relative;
+  transition: all 0.6s ease-in-out;
+  perspective: 100rem;
+}
+
 .projects-section img {
   max-width: 100%;
+  position: relative;
+  transition: all 0.6s ease-in-out;
+  transform: rotateX(0deg) rotateY(0deg);
+  perspective: 100rem;
+  transform-style: preserve-3d;
+}
+
+.projects-section figure div:first-child {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(233, 236, 239, 0.9);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+  z-index: 111;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.projects-section figure div:first-child svg {
+  width: 3.6rem;
+}
+
+.projects-section figure div:first-child a {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.projects-section figure div:first-child a:first-child {
+  transform: translateX(-100%);
+}
+
+.projects-section figure div:first-child a:last-child {
+  transform: translateX(100%);
+}
+
+.projects-section li:hover figure div:first-child,
+.projects-section .focus figure div:first-child {
+  opacity: 1;
+}
+
+.projects-section li:hover figure div:first-child a,
+.projects-section .focus figure div:first-child a {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .projects-section li div {
@@ -64,22 +121,4 @@
   padding: 1rem;
   border-radius: 3px;
   align-self: flex-end;
-}
-
-.fade-enter {
-  opacity: 0;
-}
-
-.fade-enter-active {
-  opacity: 0;
-  transition: all 500ms ease-in-out;
-}
-
-.fade-exit {
-  opacity: 1;
-}
-
-.fade-exit-active {
-  opacity: 0;
-  transition: all 500ms ease-in-out;
 }

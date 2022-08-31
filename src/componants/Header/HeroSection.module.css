@@ -38,7 +38,7 @@
 }
 
 .me {
-  max-width: 100%;
+  max-width: 40%;
 }
 
 .section-hero img {
@@ -51,9 +51,6 @@
   }
   .hero h2 {
     font-size: 4rem;
-  }
-  .me {
-    max-width: 40%;
   }
 }
 

@@ -41,6 +41,9 @@
   box-shadow: 0 0 4.8rem rgba(0, 0, 0, 0.075);
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 
+  box-shadow: 0 0 4.8rem rgba(233, 236, 239, 0.075)
+  box-shadow: 0 0 1rem rgba(233, 236, 239, 0.3)
+
   For button
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);

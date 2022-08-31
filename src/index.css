@@ -131,7 +131,7 @@ body {
   color: var(--theme-color);
   padding: 1.6rem;
   border-radius: 3px;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
   transition: all 0.5s;
 }
 
@@ -144,6 +144,7 @@ body {
   background-color: var(--theme-color);
   color: var(--main-color);
   transform: translateY(-20%);
+  box-shadow: 0 1rem 3.6rem rgba(0, 0, 0, 0.1);
 }
 
 .heading-primary,
@@ -215,15 +216,30 @@ section {
 .loaded div div:first-child {
   transform: translateY(-100%);
   opacity: 0;
+  animation: loaded 0.1s both 3s;
 }
 
 .loaded div div:nth-child(2) {
   transform: translateY(100%);
   opacity: 0;
+  animation: loaded 0.1s both 3s;
 }
 
 .loaded div div:last-child,
 .loaded div div:last-child::before,
 .loaded div div:last-child::after {
-  opacity: 0;
+  display: none;
+}
+.loaded {
+  animation: loaded 0.1s both 2.8s !important;
+}
+
+@keyframes loaded {
+  to {
+    width: 0;
+    height: 0;
+    border: none;
+    top: -100%;
+    left: -100%;
+  }
 }

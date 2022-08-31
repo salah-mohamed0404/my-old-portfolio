@@ -18,18 +18,35 @@
 
 .projects-section li {
   list-style: none;
+
+  color: var(--theme-color);
+  transform: translateX(0);
+  opacity: 0;
+  animation: mount 1s both;
+}
+
+.list-item {
   display: flex;
   flex-direction: column;
   border-radius: 3px;
   overflow: hidden;
-  color: var(--theme-color);
-  box-shadow: 0 0 3.6rem rgba(0, 0, 0, 0.2);
+  height: 100%;
   transition: all 0.5s;
 }
 
-.projects-section li:hover {
+.projects-section .list-item:hover {
   transform: translateY(-5%);
-  box-shadow: 0 1rem 4.8rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1rem 4.8rem rgba(0, 0, 0, 0.1);
+}
+
+@keyframes mount {
+  from {
+    transform: translateX(10%);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .projects-section figure {
@@ -42,9 +59,6 @@
   max-width: 100%;
   position: relative;
   transition: all 0.6s ease-in-out;
-  transform: rotateX(0deg) rotateY(0deg);
-  perspective: 100rem;
-  transform-style: preserve-3d;
 }
 
 .projects-section figure div:first-child {
@@ -93,7 +107,7 @@
   transform: translateX(0);
 }
 
-.projects-section li div {
+.projects-section li div div {
   padding: 2.4rem 1.8rem;
   display: flex;
   flex-direction: column;

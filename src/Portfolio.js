@@ -4,16 +4,13 @@ import Header from "./componants/Header/Header";
 import LoadingSpinner from "./componants/Loading/LoadingSpinner";
 import Main from "./componants/Main";
 
-let firstLoad = true;
+let loaded = false;
 
 function Portfolio() {
   const [isLoading, setIsLoading] = useState(true);
   const loadingEl = document.getElementById("loading");
+
   window.addEventListener("load", () => loadingEl.classList.add("loaded"));
-  if (firstLoad && loadingEl.classList.contains("loaded")) {
-    firstLoad = false;
-    setIsLoading(false);
-  }
 
   return (
     <>

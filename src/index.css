@@ -211,3 +211,19 @@ section {
   opacity: 0 !important;
   transform: translateY(8rem);
 }
+
+.loaded div div:first-child {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.loaded div div:nth-child(2) {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.loaded div div:last-child,
+.loaded div div:last-child::before,
+.loaded div div:last-child::after {
+  opacity: 0;
+}

@@ -15,7 +15,6 @@ function Main() {
 
     const revealSection = function (entries, observer) {
       const [entry] = entries;
-      console.log(entry);
 
       if (!entry.isIntersecting) return;
 

@@ -1,7 +1,7 @@
 .loading div {
   position: fixed;
   z-index: 2000;
-  transition: all 2s ease-in-out 0.7s;
+  transition: all 2s ease-in-out;
 }
 
 .loading div:first-child,

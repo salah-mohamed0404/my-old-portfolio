@@ -97,8 +97,7 @@
   transform: translateX(100%);
 }
 
-.projects-section li:hover figure div:first-child,
-.projects-section .focus figure div:first-child {
+.projects-section li:hover figure div:first-child {
   opacity: 1;
 }
 

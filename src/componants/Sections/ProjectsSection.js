@@ -37,11 +37,8 @@ function Projects() {
     setActive(e.target.textContent);
   };
 
-  const focusHandler = e =>
-    e.target.closest("li").classList.toggle(`${classes.focus}`);
-
   const renderProject = project => (
-    <li key={project.name} onClick={focusHandler}>
+    <li key={project.name}>
       <div className={classes["list-item"]}>
         <figure>
           <div>

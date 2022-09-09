@@ -349,6 +349,16 @@ export const projects = [
     liveURL: "https://salah-weather-app0.herokuapp.com/",
     featured: false,
   },
+  {
+    name: "Chat-app",
+    description: "A real-time chat app with socket.io",
+    img: require("../assets/projects/chat_app.jpg"),
+    technology: "NodeJS",
+    codeURL:
+      "https://github.com/salahcst344/Kalbonyan-Elmarsos/blob/main/02-Udemy/-04-Nodejs-Andrew/Projects/Chat-App",
+    liveURL: "https://salah-chat-app.herokuapp.com/",
+    featured: true,
+  },
   // {
   //   name: "",
   //   description: "",

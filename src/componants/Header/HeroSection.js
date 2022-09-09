@@ -12,9 +12,18 @@ function HeroSection() {
           <h2 className="heading-secondary">
             I'm web developer <strong>(MERN Stack)</strong>
           </h2>
-          <a href="#skills" className="btn link">
-            To my skills
-          </a>
+          <div className={classes["cta-btns"]}>
+            <a href="#skills" className="btn link">
+              To my skills
+            </a>
+            <a
+              href="https://fcihelwanedu-my.sharepoint.com/:w:/g/personal/salah_20210477_fci_helwan_edu_eg/EWPGWGr6v1RAueRiVcRm0dsBxLp5vTjIF2zYbCbArv1NFQ?e=lILpID"
+              className="link"
+              target="_blank"
+            >
+              CV
+            </a>
+          </div>
         </div>
 
         <div className={classes.me}>

@@ -38,6 +38,39 @@
   z-index: -1;
 }
 
+.cta-btns {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.section-hero a:last-child {
+  position: relative;
+  padding: 1.6rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.section-hero a:last-child::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.5rem;
+  background-color: var(--main-color);
+
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.section-hero a:last-child:hover::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
 .me {
   max-width: 40%;
 }

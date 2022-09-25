@@ -2,7 +2,7 @@ export const courses = [
   {
     name: "Programming foundation",
     description:
-      "A series of 10 courses that taut me a lot of the things such as programming fundamentals, object oriented design, data structure, Algorithms, design patterns and much more",
+      "A series of 10 courses that taut me a lot of the things such as programming fundamentals, object oriented design, data structure, Algorithms, design patterns and much more.",
     campany: "Linkedin",
     certificateURL:
       "https://fcihelwanedu-my.sharepoint.com/:f:/g/personal/salah_20210477_fci_helwan_edu_eg/Evf0zIBNT95OtH6Y-J1KfOoBjqF6OBKYorbjqI_RiJ_KIg?e=VmsbrR",
@@ -20,7 +20,7 @@ export const courses = [
   {
     name: "The Complete JavaScript Course 2022: From Zero to Expert!",
     description:
-      "In the 70 hour course, I learned the fundametals of JavaScript then i learned OOP and data structure of JavaScript and learned how to deal with APIs and asynchronus JavaScript. i parcticed what i leared by building more complex website with alot of functionalities",
+      "In the 70 hour course, I learned the fundametals of JavaScript then i learned OOP and data structure of JavaScript and learned how to deal with APIs and asynchronus JavaScript. i parcticed what i leared by building more complex website with alot of functionalities.",
     campany: "Udemy",
     certificateURL:
       "https://fcihelwanedu-my.sharepoint.com/:b:/g/personal/salah_20210477_fci_helwan_edu_eg/Ed5PDJ0Vyb9GsIr_5H0fluUBSyYM1NBXTEPm7qlAjtleHA?e=mwvPOI",
@@ -29,7 +29,7 @@ export const courses = [
   {
     name: "React - The Complete Guide (incl Hooks, React Router, Redux)",
     description:
-      "In the 48 hour cours i learned all about ReactJS starting with basics into more advanced topics. ilearned the JSX syntax then i learned how to use react hooks. I dived into alot of variois topics and leared it like React Router, Redux, NextJS, TypeScript and much more. ipractice what i learned by build powerful websites that use the power of react to achieve better UI",
+      "In the 48 hour cours i learned all about ReactJS starting with basics into more advanced topics. ilearned the JSX syntax then i learned how to use react hooks. I dived into alot of variois topics and leared it like React Router, Redux, NextJS, TypeScript and much more. ipractice what i learned by build powerful websites that use the power of react to achieve better UI.",
     campany: "Udemy",
     certificateURL:
       "https://fcihelwanedu-my.sharepoint.com/:b:/g/personal/salah_20210477_fci_helwan_edu_eg/EdwU3F8Mv1pAnWn67H3hDC8Bxo7bFMPUMs0MKZTrqe0lmw?e=7dqYNm",
@@ -38,19 +38,30 @@ export const courses = [
   {
     name: "The Complete Node.js Developer Course (3rd Edition)",
     description:
-      "In the 35 hour course i learned all about NodeJS starting from the basics and into more advanced topics. I learned how to use APIs, async JavaScript, how to create server web app using express, how to make REST API and make endpoints , And how to use Socket.io for creating socket apps. I practiced what i learned by making 4 apps(chat app - task manger API - weather app - notes)",
+      "In the 35 hour course i learned all about NodeJS starting from the basics and into more advanced topics. I learned how to use APIs, async JavaScript, how to create server web app using express, how to make REST API and make endpoints , And how to use Socket.io for creating socket apps. I practiced what i learned by making 4 apps(chat app - task manger API - weather app - notes).",
     campany: "Udemy",
-    certificateURL: "",
+    certificateURL:
+      "https://fcihelwanedu-my.sharepoint.com/:b:/g/personal/salah_20210477_fci_helwan_edu_eg/EUSBEOnL6bdOmGzoYqHBQ0wBCSoRlGB1OJ2gXHyCFycF6A?e=cVEyYg",
     mentor: "Andrew Mead",
   },
   {
-    name: "AWS",
-    campany: "Amazon",
-    certificateURL: "",
+    name: "AWS Certified Cloud Practitioner (CLF-C01)",
+    description: "In the 16 hour course I learned all about AWS basics.",
+    campany: "A cloud guru",
+    certificateURL:
+      "https://verify.acloud.guru/36A7E9A33481?_ga=2.115880256.755050368.1663070901-788409105.1662750507",
+    mentor: "",
+  },
+  {
+    name: "AWS Certified Solutions Architect - Associate (SAA-C02)",
+    description: "In the 45 hour course I go deeper in AWS services.",
+    campany: "A cloud guru",
+    certificateURL: "https://verify.acloud.guru/C79680BEBECC",
     mentor: "",
   },
   // {
   //   name: "",
+  // description: "",
   //   campany: "",
   //   certificateURL: "",
   //   mentor: "",
@@ -358,6 +369,16 @@ export const projects = [
       "https://github.com/salahcst344/Kalbonyan-Elmarsos/blob/main/02-Udemy/-04-Nodejs-Andrew/Projects/Chat-App",
     liveURL: "https://salah-chat-app.herokuapp.com/",
     featured: true,
+  },
+  {
+    name: "Notes SST app",
+    description: "",
+    img: require("../assets/projects/notes_sst_app.png"),
+    technology: "Serverless",
+    codeURL:
+      "https://github.com/salahcst344/Kalbonyan-Elmarsos/tree/main/04-Serverless-Stack-Project/Serverless-project",
+    liveURL: "https://d108jvovxp8dox.cloudfront.net/",
+    featured: false,
   },
   // {
   //   name: "",

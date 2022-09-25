@@ -21,9 +21,7 @@
   list-style: none;
 
   color: var(--theme-color);
-  transform: translateX(0);
-  opacity: 0;
-  animation: mount 1s both;
+  height: 48rem;
 }
 
 .list-item {
@@ -38,16 +36,6 @@
 .projects-section .list-item:hover {
   transform: translateY(-5%);
   box-shadow: 0 1rem 4.8rem rgba(0, 0, 0, 0.1);
-}
-
-@keyframes mount {
-  from {
-    transform: translateX(10%);
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
 
 .projects-section figure {

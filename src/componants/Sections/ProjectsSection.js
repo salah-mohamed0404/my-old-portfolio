@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { projects } from "../../store/data";
 import classes from "./ProjectsSection.module.css";
 
@@ -38,7 +39,14 @@ function Projects() {
   };
 
   const renderProject = project => (
-    <li key={project.name}>
+    <motion.li
+      layout
+      key={project.name}
+      initial={{ translateX: "10%", opacity: 0 }}
+      animate={{ translateX: 0, opacity: 1 }}
+      exit={{ translateX: "10%", opacity: 0 }}
+      transition={{ type: "spring", duration: 0.5, bounce: 0.15 }}
+    >
       <div className={classes["list-item"]}>
         <figure>
           <div>
@@ -74,7 +82,7 @@ function Projects() {
           <span>{project.technology}</span>
         </div>
       </div>
-    </li>
+    </motion.li>
   );
 
   return (
@@ -89,7 +97,11 @@ function Projects() {
           ))}
         </nav>
 
-        <ul>{filteredProjects.map(project => renderProject(project))}</ul>
+        <ul>
+          <AnimatePresence>
+            {filteredProjects.map(project => renderProject(project))}
+          </AnimatePresence>
+        </ul>
       </div>
     </section>
   );

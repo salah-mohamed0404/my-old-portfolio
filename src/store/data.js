@@ -113,6 +113,16 @@ export const skills = [
 
 export const projects = [
   {
+    name: "Shareme",
+    description:
+      "This is a modern fullstack web application with all advansed social media.",
+    technology: "ReactJS",
+    img: require("../assets/projects/shareme.png"),
+    codeURL: "https://github.com/salahcst344/shareme",
+    liveURL: "https://shareme-s.web.app/",
+    featured: true,
+  },
+  {
     name: "Omnifood",
     description: "Heathy food landing page.",
     technology: "HTML&CSS",

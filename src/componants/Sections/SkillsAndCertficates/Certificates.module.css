@@ -35,6 +35,29 @@
   line-height: 1.2;
 }
 
+.certificates-list h3::before {
+  content: attr(data-description);
+  width: 40rem;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: rgba(135, 143, 150, 0.95);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  opacity: 0;
+  transform: translate(-20%, -120%);
+  /* transition: transform 0.5s ease-in-out, opacity 0.4s ease-in-out; */
+  z-index: -1;
+  visibility: hidden;
+}
+
+.certificates-list li div:last-child h3:hover::before {
+  visibility: visible;
+  animation: fadeIn 0.5s ease-in-out both alternate;
+}
+
 .certificates-list h3::after {
   content: "";
   position: absolute;
@@ -57,25 +80,14 @@
   font-size: 1.8rem;
 }
 
-.certificates-list p {
-  width: 40rem;
-  font-size: 1.4rem;
-  line-height: 1.8;
-  padding: 2rem;
-  border-radius: 20px;
-  background-color: rgba(135, 143, 150, 0.95);
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  opacity: 0;
-  transform: translate(200%, -120%);
-  transition: transform 0.5s ease-in-out, opacity 0.4s ease-in-out;
-  z-index: -1;
-}
-
-.certificates-list li div:last-child h3:hover p {
-  opacity: 1;
-  transform: translate(10%, -120%);
+@keyframes fadeIn {
+  from {
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, -120%);
+  }
 }
 
 @media (max-width: 65.625em) {

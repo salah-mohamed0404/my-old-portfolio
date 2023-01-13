@@ -2,7 +2,7 @@ import { courses } from "../../../store/data";
 import classes from "./Certificates.module.css";
 
 function Certificates() {
-  const renderCertificate = (course) => (
+  const renderCertificate = course => (
     <li key={course.name}>
       <div>
         <a className="link" href={course.certificateURL} target="blank">
@@ -13,11 +13,11 @@ function Certificates() {
       </div>
 
       <div>
-        <h3>
+        <h3 data-description={course.description}>
           <a className="link" href={course.certificateURL} target="blank">
             {course.name}
           </a>
-          <p>{course.description}</p>
+          {/* <p>{course.description}</p> */}
         </h3>
         <span>
           {course.campany} {course.mentor && `(${course.mentor})`}
@@ -28,7 +28,7 @@ function Certificates() {
 
   return (
     <ul className={classes["certificates-list"]}>
-      {courses.map((course) => renderCertificate(course))}
+      {courses.map(course => renderCertificate(course))}
     </ul>
   );
 }

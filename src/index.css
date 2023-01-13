@@ -119,6 +119,7 @@ body {
   letter-spacing: 0.5px;
   font-weight: 500;
   padding: 0.8rem;
+  cursor: pointer;
 }
 
 .btn:link,

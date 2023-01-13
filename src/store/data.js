@@ -35,30 +35,6 @@ export const courses = [
       "https://fcihelwanedu-my.sharepoint.com/:b:/g/personal/salah_20210477_fci_helwan_edu_eg/EdwU3F8Mv1pAnWn67H3hDC8Bxo7bFMPUMs0MKZTrqe0lmw?e=7dqYNm",
     mentor: "Maximilian Schwarzmuller",
   },
-  {
-    name: "The Complete Node.js Developer Course (3rd Edition)",
-    description:
-      "In the 35 hour course i learned all about NodeJS starting from the basics and into more advanced topics. I learned how to use APIs, async JavaScript, how to create server web app using express, how to make REST API and make endpoints , And how to use Socket.io for creating socket apps. I practiced what i learned by making 4 apps(chat app - task manger API - weather app - notes).",
-    campany: "Udemy",
-    certificateURL:
-      "https://fcihelwanedu-my.sharepoint.com/:b:/g/personal/salah_20210477_fci_helwan_edu_eg/EUSBEOnL6bdOmGzoYqHBQ0wBCSoRlGB1OJ2gXHyCFycF6A?e=cVEyYg",
-    mentor: "Andrew Mead",
-  },
-  {
-    name: "AWS Certified Cloud Practitioner (CLF-C01)",
-    description: "In the 16 hour course I learned all about AWS basics.",
-    campany: "A cloud guru",
-    certificateURL:
-      "https://verify.acloud.guru/36A7E9A33481?_ga=2.115880256.755050368.1663070901-788409105.1662750507",
-    mentor: "",
-  },
-  {
-    name: "AWS Certified Solutions Architect - Associate (SAA-C02)",
-    description: "In the 45 hour course I go deeper in AWS services.",
-    campany: "A cloud guru",
-    certificateURL: "https://verify.acloud.guru/C79680BEBECC",
-    mentor: "",
-  },
   // {
   //   name: "",
   // description: "",
@@ -78,6 +54,10 @@ export const skills = [
     logo: require("../assets/skill logos/CSS.png"),
   },
   {
+    name: "SASS",
+    logo: require("../assets/skill logos/sass.png"),
+  },
+  {
     name: "JavaScript",
     logo: require("../assets/skill logos/JS.png"),
   },
@@ -90,20 +70,8 @@ export const skills = [
     logo: require("../assets/skill logos/Redux.png"),
   },
   {
-    name: "NextJS",
-    logo: require("../assets/skill logos/NextJS.png"),
-  },
-  {
-    name: "NodeJS",
-    logo: require("../assets/skill logos/NodeJS.png"),
-  },
-  {
-    name: "Express",
-    logo: require("../assets/skill logos/express.png"),
-  },
-  {
-    name: "MongoDB",
-    logo: require("../assets/skill logos/MongoDB.png"),
+    name: "MUI",
+    logo: require("../assets/skill logos/MUI.png"),
   },
   // {
   //   name: "",
@@ -378,7 +346,7 @@ export const projects = [
     codeURL:
       "https://github.com/salahcst344/Kalbonyan-Elmarsos/blob/main/02-Udemy/-04-Nodejs-Andrew/Projects/Chat-App",
     liveURL: "https://salah-chat-app.herokuapp.com/",
-    featured: true,
+    featured: false,
   },
   {
     name: "Notes SST app",
@@ -401,7 +369,7 @@ export const projects = [
   // },
 ];
 
-export const myEmail = "salah.web.engineer@gmail.com";
+export const myEmail = "salah.mohamed0404@gmail.com";
 export const myPhone = "+20 1116387902";
-export const myLinkedin = "https://www.linkedin.com/in/salah-mohamed-1649b0234";
+export const myLinkedin = "https://www.linkedin.com/in/salah-mohamed0404/";
 export const myGithub = "https://github.com/salahcst344";

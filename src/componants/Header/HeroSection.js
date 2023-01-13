@@ -10,7 +10,7 @@ function HeroSection() {
             Hi, i'm <strong>Salah Mohamed</strong>
           </h1>
           <h2 className="heading-secondary">
-            I'm web developer <strong>(MERN Stack)</strong>
+            I'm <strong>FrontEnd developer</strong>
           </h2>
           <div className={classes["cta-btns"]}>
             <a href="#skills" className="btn link">
